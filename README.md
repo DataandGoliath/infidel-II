@@ -14,3 +14,5 @@ rshell=true  #use reverse handler
 or 
 bshell=false
 rshell=false #Useful for, for example, msf's "speak_pwnd" shellcode, where a handler is not necessary
+
+I plan to update the shellcode to incorperate a thread based exit call, rather than process based. This prevents vulnserver from crashing. 
